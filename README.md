@@ -24,11 +24,11 @@ Add to your `composer.json`:
         "type": "package",
         "package": {
             "type": "wordpress-muplugin",
-            "name": "ruslangallo/wp-mu-autoloader",
+            "name": "charlessellers/wp-mu-autoloader",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ruslangallo/wp-mu-autoloader",
+                "url": "https://github.com/CharlesSellers/wp-mu-autoloader",
                 "reference": "master"
             }
         }
@@ -43,13 +43,13 @@ Add to your `composer.json`:
     "johnpbloch/wordpress-core-installer": "~0.2",
     "johnpbloch/wordpress": "^4.5",
     "composer/installers": "^1.0",
-    "ruslangallo/wp-mu-autoloader": "^1.0",
+    "charlessellers/wp-mu-autoloader": "^1.0",
     "wpackagist-plugin/mu-plugin": "^1.0",
 },
 "extra": {
     "wordpress-install-dir": "wordpress",
     "installer-paths": {
-        "wordpress/wp-content/mu-plugins": ["ruslangallo/wp-mu-autoloader"],
+        "wordpress/wp-content/mu-plugins": ["charlessellers/wp-mu-autoloader"],
         "wordpress/wp-content/mu-plugins/{$name}": [
             "type:wordpress-muplugin",
             "wpackagist-plugin/mu-plugin"
@@ -69,7 +69,7 @@ $ composer install
 ## Remove with Composer
 
 ```
-$ composer remove ruslangallo/wp-mu-autoloader
+$ composer remove charlessellers/wp-mu-autoloader
 $ composer install
 ```
 
